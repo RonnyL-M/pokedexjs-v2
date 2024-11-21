@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PokedexJs V2</title>
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
     <link rel="stylesheet" href="css/background.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+
 
 </head>
 
@@ -14,12 +20,20 @@
     <header>
         <h1>MyPokedex.js</h1>
     </header>
-    <div class="grid-background">
-        
-        <div class="scanner"></div>
-
-        <!-- Your content goes here -->
+    <div id="scanner"></div>
+    <div id="main">
+        <div id="searchbar_div"> 
+            <input type="text" name="" id="search">
+            <button id="submit_btn" name="submit_btn">Go !</button>
+        </div>
+        <div id="pkmn_div">
+            <div id="info_pkmn"></div>
+            <div id="list_pkmn"></div>
+        </div>
     </div>
+
+
+
 </body>
 
 </html>

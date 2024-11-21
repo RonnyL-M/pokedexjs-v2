@@ -1,10 +1,10 @@
 body {
+    /*Grid background*/
     margin: 0;
     padding: 0;
-}
-
-.grid-background {
     position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-color: #03af77; /* Light green */
@@ -14,7 +14,7 @@ body {
     background-size: 20px 20px; /* Size of the grid squares */
 }
 
-.scanner {
+#scanner {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,13 +26,14 @@ body {
         rgba(255, 255, 255, 0) /* Trail fades out */
     );
     animation: scan 7s linear infinite; /* Animation for the scanning effect */
+    z-index: -1;
 }
 
 @keyframes scan {
     from {
-        top: 100%; /* Start at the top */
+        top: 100%; /* Start */
     }
     to {
-        top: 0%; /* Move to the bottom */
+        top: 0%; /* Move to */
     }
 }
