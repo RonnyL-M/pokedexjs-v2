@@ -1,0 +1,5 @@
+#searchbar_div{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
